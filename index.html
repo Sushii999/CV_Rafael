@@ -1,62 +1,141 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Editable</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-    }
-
-    header {
-      background-color: #007bff;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-    }
-
-    main {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Diapositivas Informática y Tecnología</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .page {
+            background-color: white;
+            margin: 20px auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            min-height: 400px;
+            box-sizing: border-box;
+        }
+        h1, h2, h3 {
+            color: #2e8b57; /* Dark Green */
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .section-title {
+            font-size: 2em;
+            color: #2e8b57;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2e8b57;
+            padding-bottom: 5px;
+        }
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.5em;
+            color: #2e8b57;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Portafolio</h1>
-  </header>
+    <div class="page">
+        <div class="header">
+            <p>Proyecto Realizado por Rafael Ortiz</p> 
+            <h1>INGENIERÍA EN SISTEMAS</h1>
+        </div>
+    </div>
 
-  <main>
-    <h2>Sobre mí</h2>
-    <p>Hola, soy Rafa y estoy aprendiendo HTML.</p>
+    <div class="page">
+        <div class="image-container">
+            <img src="https://lh7-us.googleusercontent.com/docsz/Ww610k8cM4y8_c9d8w_810_image_0.png" alt="Notebook and Pen">
+        </div>
+        <h2 class="section-title">INTRODUCCIÓN</h2> 
+        <p>Soy estudiante de Ingeniería en Sistemas con interés en el desarrollo de software, bases de datos y tecnologías emergentes.  Esta presentación reúne algunos de los conocimientos, habilidades y proyectos que he adquirido a lo largo de mi carrera, con el objetivo de mostrar mi preparación y compromiso con el aprendizaje continuo.</p> 
+    </div>
 
-    <h3>Mis intereses</h3>
-    <ul>
-      <li>Programación</li>
-      <li>Videojuegos</li>
-      <li>Diseño web</li>
-    </ul>
+    <div class="page">
+        <h2 class="section-title">HABILIDADES TÉCNICAS</h2> 
+        <ul>
+            <li><strong>Lenguajes:</strong> C++, Java, HTML, Python </li>
+            <li><strong>Frameworks:</strong> Laravel </li>
+            <li><strong>Bases de datos:</strong> MySQL </li>
+            <li><strong>Herramientas:</strong> Visual Studio Code </li>
+            <li><strong>Otros conocimientos:</strong> AutoCAD, Unity, Linux </li>
+        </ul>
+    </div>
 
-    <p>Estoy estudiando Ingeneria en sistemas, y me pidieron esto en una clase, y donde comparto proyectos, ideas y aprendizajes sobre tecnología.</p>
-  </main>
+    <div class="page">
+        <div class="image-container">
+            <img src="https://lh7-us.googleusercontent.com/docsz/Ww610k8cM4y8_c9d8w_810_image_1.png" alt="Keyboard">
+        </div>
+        <h2 class="section-title">PROYECTOS DESTACADOS</h2> 
+        <h3>Agenda Android Studio</h3> 
+        <ul>
+            <li>Aplicación móvil desarrollada con Android Studio y base de datos local SQLite. </li>
+            <li>Permite registrar datos como nombre, país, dominio, ID y foto. </li>
+            <li>Implementa operaciones CRUD completas y una interfaz intuitiva. </li>
+        </ul>
+        <h3>API Laravel en DigitalOcean</h3> 
+        <ul>
+            <li>Despliegue de una API desarrollada en Laravel, con Docker, GitHub Actions, DOCR y Load Balancer en DigitalOcean. </li>
+            <li>Base de datos gestionada con PostgreSQL. </li>
+            <li>Pensado para alta disponibilidad y mantenimiento eficiente. </li>
+        </ul>
+        <h3>Juego tipo Geometry Dash en Unity</h3> 
+        <ul>
+            <li>Videojuego 2D desarrollado en Unity. </li>
+            <li>Recrea mecánicas similares a Geometry Dash. </li>
+            <li>Se implementaron físicas, detección de colisiones y control del personaje. </li>
+            <li>Proyecto personal desde cero. </li>
+        </ul>
+    </div>
 
-  <footer>
-    &copy; 2025 Rafa
-  </footer>
+    <div class="page">
+        <div class="image-container">
+            <img src="https://lh7-us.googleusercontent.com/docsz/Ww610k8cM4y8_c9d8w_810_image_2.png" alt="Robot">
+        </div>
+        <h2 class="section-title">RECONOCIMIENTOS Y CERTIFICADOS</h2> 
+        <ul>
+            <li>Certificado en Desarrollo Web </li>
+        </ul>
+    </div>
+
+    <div class="page">
+        <div class="footer">
+            <p>MUCHAS GRACIAS</p> 
+        </div>
+    </div>
 
 </body>
 </html>
